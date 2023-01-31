@@ -31,10 +31,10 @@ namespace testChani
                     case "Free_Shipping":
                         if (item.Value == "false")
                         {
-                            Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains (text(),'FREE')]";
+                            Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains not(text(),'FREE')]";
                         }
                         else
-                            Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains not(text(),'FREE')]";
+                            Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains (text(),'FREE')]";
                         break;
                         
                     default:
