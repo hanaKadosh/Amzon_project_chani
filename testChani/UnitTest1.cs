@@ -25,8 +25,8 @@ namespace testChani
             Amazon amazon = new Amazon(broser);
             amazon.Pages.PageHome.Search.Text = "mouse";
             amazon.Pages.PageHome.Search.Click();
-            amazon.Pages.PageHome.Results_.GetResultBy(myDictionary);
-            Assert.True(true);
+            var items=amazon.Pages.Results.GetResultBy(myDictionary);
+           // Assert.AreEqual( );
         }
 
     }

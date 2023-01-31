@@ -42,7 +42,7 @@ namespace testChani
             }
 
         }
-        public Results Results_
+        public Results Results
         {
             get
             {

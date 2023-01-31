@@ -29,8 +29,12 @@ namespace testChani
                         Xpath += "and descendant::span[@class='a-offscreen' and translate(text(),'$,','')>=" + dictionary[item.Key]+" and parent::span[not(contains(@data-a-strike,'true'))]]";
                         break;
                     case "Free_Shipping":
+                        if (item.Value == "false")
+                        {
                             Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains (text(),'FREE')]";
-                      
+                        }
+                        else
+                            Xpath += " and descendant::span[@class='a-color-base a-text-bold'  and contains not(text(),'FREE')]";
                         break;
                         
                     default:
