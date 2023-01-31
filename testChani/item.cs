@@ -18,5 +18,9 @@ namespace testChani
             this.url = url;
             this.price = price;
         }
+        public string Title { get {return title; } set{; } }
+        public string Url { get { return url; }set {; } }
+        public string Price { get {return price; } set {; } }
+
     }
 }

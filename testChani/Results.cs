@@ -15,7 +15,7 @@ namespace testChani
         public List<Item> GetResultBy(Dictionary<string, string> dictionary)
         {
             List<Item> response = new List<Item>();
-            //  string Xpath = "//span[@class = 'a-price'";
+         
             string Xpath = "//div[@data-component-type='s-search-result' ";
             foreach (KeyValuePair<string, string> item in dictionary)
             {
